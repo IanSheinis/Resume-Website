@@ -27,6 +27,7 @@ body {
 }
 
 .light {
+  /* TODO CHANGE COLOR FOR SPAN TEXT */
   --clr-bg: #fcfcfc;
   --clr-bg-alt: #fff;
   --clr-bg-alt-2: #a7c4d9;
