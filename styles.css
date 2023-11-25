@@ -287,7 +287,7 @@ button {
   padding-bottom:2.5em;
 }
 
-.about__name {
+.primary__shift {
   color: var(--clr-primary);
   transition: color 0.2s linear;
   
@@ -324,7 +324,7 @@ button {
   background-color: var(--clr-bg-alt-2);
 }
 
-.background__shift:hover .about__name {
+.background__shift:hover .primary__shift {
   color: var(--clr-bg-alt-2-reverse);
   border-color: var(--clr-bg-alt-2-reverse);
 }
@@ -338,6 +338,11 @@ button {
 .background__shift:hover 
 .btn--outline:hover {
   color: var(--clr-bg);
+}
+
+.header:hover .primary__shift {
+  color: var(--clr-bg-alt-2-reverse);
+  border-color: var(--clr-bg-alt-2-reverse);
 }
 
 .projects__grid {
@@ -401,8 +406,7 @@ button {
 }
 
 .footer {
-  padding: 3em 0;
-  padding-top: 4em;
+  padding: 2em 0 1em 0;
   text-align: center;
 }
 
