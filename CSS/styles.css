@@ -106,6 +106,11 @@ button {
   cursor: pointer;
 }
 
+img{
+  height: 400px;
+  width: 200px;
+}
+
 @media (max-width: 900px) {
   h1 {
     font-size: 2.6rem;
@@ -160,6 +165,10 @@ button {
   font-size: 0.9rem;
   /* text-transform: lowercase; */
   transition: transform 0.2s ease-in-out;
+}
+
+.btn__back{
+  margin-left:1%;
 }
 
 .btn--outline {
@@ -246,6 +255,10 @@ button {
   
 }
 
+.page__title{
+  margin: 0 auto;
+}
+
 /* main {
   max-width: 1100px;
   width: 95%;
@@ -291,6 +304,10 @@ button {
   color: var(--clr-primary);
   transition: color 0.2s linear;
   
+}
+
+.alt__primary {
+  color: var(--clr-bg-alt-2-reverse);
 }
 
 .about__role {
@@ -353,7 +370,7 @@ button {
   grid-gap: 2em;
 }
 
-.project {
+.project, .seperate__project {
   padding: 2em;
   margin: 0 auto;
   text-align: center;
@@ -361,6 +378,14 @@ button {
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
 }
+
+.seperate__projects__grid {
+  height:95%;
+  display: flex;
+  justify-content: center;
+}
+
+
 
 .project:hover {
   transform: translateY(-7px);
@@ -387,6 +412,8 @@ button {
 .project .link--icon {
   margin-left: 0.5em;
 }
+
+
 
 .skills__list {
   max-width: 450px;

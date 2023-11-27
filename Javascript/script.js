@@ -61,3 +61,6 @@ const scrollUp = () => {
 }
 
 document.addEventListener('scroll', scrollUp)
+window.onload = function() {
+	//if(!isDark()) setTheme('dark', 'fa-sun');
+}

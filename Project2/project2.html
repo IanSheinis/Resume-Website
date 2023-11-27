@@ -15,24 +15,30 @@
         crossorigin="anonymous"
         ></script>
         <!-- imple -->
-        <link rel="stylesheet" href="######" />
+        <link rel="stylesheet" href="..\CSS\styles.css" />
         <title>Android Game</title>
     </head>
-    <body>
-        <header>
-            <a aria-label="Go back" href="javascript:window. history. back();">
-                <i class="fas fa-arrow-left">
-                </i>
+    <body class = "light">
+        <header class = "center">
+            <a aria-label="Go back" href="javascript:window. history. back();" class="btn__back">
+                <i class="fas fa-arrow-left fa-2x">
+                </i> 
             </a>
+            <h2 class="page__title">
+                <span class = "alt__primary">Android Game </span>
+            </h2>
         </header>
-        <main>
+        <main class = "seperate__projects__grid">
             <img src = "Gameplay.webp" alt = "Gameplay Webp">
-            <img src = "Results_Screen.png" alt = "Results Screen">
-            <p>
+            <div class = "seperate__project">
+                <p class = "project__description">
                 • Android App developed in Android Studios </br>
-                • Tests hand-eye coordination by spawning in a button which is placed randomly on the screen
+                • Tests hand-eye coordination by spawning in a button which is placed randomly on the screen </br>
                 • The final score is the accumulated time from asynchronous threading, where the time is incremented every 10 milliseconds
-            </p>
+                </p>
+            </div>
+            <img src = "Results_Screen.png" alt = "Results Screen">
+            
         </main>
     </body>
 </html>
