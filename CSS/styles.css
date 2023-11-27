@@ -106,11 +106,6 @@ button {
   cursor: pointer;
 }
 
-img{
-  height: 400px;
-  width: 200px;
-}
-
 @media (max-width: 900px) {
   h1 {
     font-size: 2.6rem;
@@ -233,7 +228,7 @@ img{
   align-items: center;
 }
 
-.header {
+.header, .seperate__header{
   height: 8em;
   width: 100%;
   justify-content: space-between;
@@ -241,6 +236,11 @@ img{
   border-style: none none solid none;
   background-color: var(--clr-header);
   transition: background-color 0.2s linear;
+}
+
+.seperate__header{
+  height: auto;
+  padding-bottom: .5em;
 }
 
 .header:hover {
@@ -300,13 +300,13 @@ img{
   padding-bottom:2.5em;
 }
 
-.primary__shift {
+.primary__shift,.alt__primary {
   color: var(--clr-primary);
   transition: color 0.2s linear;
   
 }
 
-.alt__primary {
+.alt__primary:hover {
   color: var(--clr-bg-alt-2-reverse);
 }
 
@@ -379,15 +379,30 @@ img{
   transition: transform 0.2s linear;
 }
 
-.seperate__projects__grid {
-  height:95%;
-  display: flex;
-  justify-content: center;
+.seperate__project {
+  margin: 0;
+  height: auto;
+  flex-basis: 40%;
+  padding: 1em;
 }
 
+.img__pop{
+  transition: transform 0.2s linear;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  height: 65%;
+  width: 15%;
+}
 
+.seperate__projects__grid {
+  height:95vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--clr-bg);
+  /* justify-content: center; */
+}
 
-.project:hover {
+.project:hover, .seperate__project:hover, .img__pop:hover {
   transform: translateY(-7px);
 }
 

@@ -15,17 +15,30 @@
         crossorigin="anonymous"
         ></script>
         <!-- imple -->
-        <link rel="stylesheet" href="######" />
-        <title>Reminder Project</title>
+        <link rel="stylesheet" href="..\CSS\styles.css" />
+        <title>Reminder Bot</title>
     </head>
-    <body>
-        <header>
-            <a aria-label="Go back" href="javascript:window. history. back();">
-                <i class="fas fa-arrow-left">
-                </i>
+    <body class = "light">
+        <header class = "center seperate__header">
+            <a aria-label="Go back" href="javascript:window. history. back();" class="btn__back">
+                <i class="fas fa-arrow-left fa-2x">
+                </i> 
             </a>
+            <h2 class="page__title">
+                <span class = "alt__primary">Python Discord Reminder Bot</span>
+            </h2>
         </header>
-        <main>
+        <main class = "seperate__projects__grid">
+            <img src = "Gameplay.webp" alt = "Gameplay Webp" class="img__pop">
+            <div class = "seperate__project">
+                <p>
+                    • Python Discord bot built to help my XC team schedule reminders </br>
+                    • Schedules reminders using SQLite3 database which stores and queries data based on send date</br>
+                    • Easily exports program using Docker Desktop which makes exporting as a container easy</br>
+                    • Program runs 24/7 for free using AWS EC2 Linux Instance which runs the program on a seperate machine
+                </p>
+            </div>
+            <img src = "Results_Screen.png" alt = "Results Screen" class="img__pop">
             
         </main>
     </body>
