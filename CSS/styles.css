@@ -237,7 +237,7 @@ button {
   background-color: var(--clr-header);
   transition: background-color 0.2s linear;
 }
-
+/* TODO MAKE MORE SHADOW FOR SEPERATE PROJECT */
 .seperate__header{
   height: auto;
   padding-bottom: .5em;
@@ -384,6 +384,16 @@ button {
   height: auto;
   flex-basis: 40%;
   padding: 1em;
+  -webkit-box-shadow: 0px 15px 41px 2px rgba(0,0,0,0.77);
+  -moz-box-shadow: 0px 15px 41px 2px rgba(0,0,0,0.77);
+  box-shadow: 0px 15px 41px 2px rgba(0,0,0,0.77);
+
+}
+
+.seperate__project__vertical {
+  flex-basis: 20%;
+  margin:auto;
+  height: auto;
 }
 
 .img__pop{
@@ -393,6 +403,16 @@ button {
   width: 15%;
 }
 
+.img__long{
+  height:100%;
+  width:100%;
+}
+
+.img__hold__long{
+  height:30%;
+  width:30%;
+}
+
 .seperate__projects__grid {
   height:95vh;
   display: flex;
@@ -400,6 +420,11 @@ button {
   align-items: center;
   background-color: var(--clr-bg);
   /* justify-content: center; */
+}
+
+.seperate__projects__grid__long{
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .project:hover, .seperate__project:hover, .img__pop:hover {
