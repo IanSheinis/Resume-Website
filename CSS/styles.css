@@ -162,8 +162,10 @@ button {
   transition: transform 0.2s ease-in-out;
 }
 
-.btn__back{
+.btn__back {
   margin-left:1%;
+  color: var(--clr-primary);
+  transition: color 0.2s ease-in-out;
 }
 
 .btn--outline {
@@ -223,6 +225,9 @@ button {
   layout
 ========*/
 
+.invisible {
+  opacity: 0;
+}
 .center {
   display: flex;
   align-items: center;
@@ -240,10 +245,11 @@ button {
 /* TODO MAKE MORE SHADOW FOR SEPERATE PROJECT */
 .seperate__header{
   height: auto;
+  padding-top: .5em;
   padding-bottom: .5em;
 }
 
-.header:hover {
+.header:hover, .seperate__header:hover{
   background-color: var(--clr-header-alt);
   border-color: var(--clr-border-strong);
 }
@@ -300,14 +306,10 @@ button {
   padding-bottom:2.5em;
 }
 
-.primary__shift,.alt__primary {
+.primary__shift{
   color: var(--clr-primary);
   transition: color 0.2s linear;
   
-}
-
-.alt__primary:hover {
-  color: var(--clr-bg-alt-2-reverse);
 }
 
 .about__role {
@@ -357,7 +359,7 @@ button {
   color: var(--clr-bg);
 }
 
-.header:hover .primary__shift {
+.header:hover .primary__shift,.seperate__header:hover .primary__shift  {
   color: var(--clr-bg-alt-2-reverse);
   border-color: var(--clr-bg-alt-2-reverse);
 }
@@ -370,13 +372,17 @@ button {
   grid-gap: 2em;
 }
 
-.project, .seperate__project {
+.project, .seperate__project,.sep__project {
   padding: 2em;
   margin: 0 auto;
   text-align: center;
   background-color: var(--clr-bg-alt);
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
+}
+
+.project__border__small{
+  padding:.5em;
 }
 
 .seperate__project {
@@ -408,9 +414,9 @@ button {
   width:100%;
 }
 
-.img__hold__long{
-  height:30%;
-  width:30%;
+.img__small{
+  height:600px;
+  width:300px;
 }
 
 .seperate__projects__grid {
