@@ -241,6 +241,8 @@ button {
   border-style: none none solid none;
   background-color: var(--clr-header);
   transition: background-color 0.2s linear;
+  /* TODO */
+  /* position: fixed; */
 }
 /* TODO MAKE MORE SHADOW FOR SEPERATE PROJECT */
 .seperate__header{
