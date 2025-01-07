@@ -31,7 +31,7 @@ body {
   --clr-bg: #fcfcfc;
   --clr-bg-alt: #fff;
   --clr-bg-alt-2: #a7c4d9;
-  --clr-bg-alt-2-reverse: #dd5a03;
+  --clr-bg-alt-2-reverse: #ff8e2b;
   --clr-fg: #555;
   --clr-fg-alt: #444;
   --clr-primary: #2978b5;
@@ -366,7 +366,8 @@ button {
   border-color: var(--clr-bg-alt-2-reverse);
 }
 
-.projects__grid {
+
+.projects__grid, .school__grid {
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
@@ -374,13 +375,14 @@ button {
   grid-gap: 2em;
 }
 
-.project, .seperate__project,.sep__project {
+.project, .school, .seperate__project,.sep__project {
   padding: 2em;
   margin: 0 auto;
   text-align: center;
   background-color: var(--clr-bg-alt);
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
+  z-index: 3;
 }
 
 .project__border__small{
@@ -430,12 +432,45 @@ button {
   /* justify-content: center; */
 }
 
+
+
+
+
+
+
+.image-overlay {
+  position: relative;/* Center horizontally */
+  left: -18%; /* Correct centering with translate */
+  z-index: 0; /* Ensure it's above school__grid */
+  padding: 1em;
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--clr-bg-alt);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s linear;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.image-overlay img {
+  width: 400px; /* Set width for the image */
+  height: 400px; /* Set height for the image */
+  border-radius: 50%; /* Make it circular */
+  /* border: 5px solid #000000; Add a border for styling */
+}
+
+.relative {
+  position: relative
+}
+.circle{
+  border-radius: 50%;
+}
 .seperate__projects__grid__long{
   justify-content: space-between;
   flex-direction: column;
 }
 
-.project:hover, .seperate__project:hover, .img__pop:hover {
+.project:hover, .seperate__project:hover, .img__pop:hover, .image-overlay:hover {
   transform: translateY(-7px);
 }
 
@@ -461,7 +496,17 @@ button {
   margin-left: 0.5em;
 }
 
-
+.center {
+  text-align: center;
+  justify-content: center;
+}
+.school_skills__list {
+  max-width: 450px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 .skills__list {
   max-width: 450px;

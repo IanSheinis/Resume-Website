@@ -25,8 +25,15 @@
         >
       </h3> -->
 
+      
       <nav class="nav center">
+        <!-- Top right -->
         <ul class="nav__list center">
+          <!-- TODO  Create school class-->
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#school"> <span class = "primary__shift">School</span></a>
+          </li>
+
           <li class="nav__list-item">
             <a class="link link--nav" href="#projects"> <span class = "primary__shift">Projects</span></a>
             
@@ -37,6 +44,8 @@
           <li class="nav__list-item">
             <a class="link link--nav" href="#skills"> <span class = "primary__shift">Skills</span></a>
           </li>
+
+          
           
         </ul>
 
@@ -88,8 +97,90 @@
         </div>
       </div>
 
-      <!-- Projects -->
+      <!-- Schoolwork -->
       <div class = "background__shift">
+        <section id="school" class="section projects relative">
+          <h2 class="section__title"> <span class = "primary__shift">School</span></h2>
+
+          
+
+          <div class="school__grid">
+            <!-- TODO: Chang to custom -->
+            <div class="project">
+              <h3> <span class = "primary__shift"> UCSB Student </span></h3>
+              <p class="project__description center">
+                • Computer Science Major</br>
+                • 3.92 GPA</br> 
+                • 2026 Graduation
+              </p>
+            
+            </div>
+            <div class="image-overlay">
+              <img src="2-color-seal.png" alt="ucsb image">
+            </div>
+    
+            <div class = "project">
+              <h2 class="section__title"><span class = "primary__shift">Courses</span></h2>
+                <ul class="school_skills__list">
+                  <li class="skills__list-item btn btn--plain">CS 130A</li>
+                  <li class="skills__list-item btn btn--plain">CS 130B</li>
+                  <li class="skills__list-item btn btn--plain">CS 138</li>
+                  <li class="skills__list-item btn btn--plain">CS 162</li>
+                  <li class="skills__list-item btn btn--plain">CS 178</li>
+                  <li class="skills__list-item btn btn--plain">ECE 152A</li>
+                  <li class="skills__list-item btn btn--plain">ECE 178</li>
+                  <li class="skills__list-item btn btn--plain">CS Lower divisions</li>
+                </ul>
+            </div>
+          </div>
+
+          
+
+          
+
+        </section>
+      </div>
+
+      <!-- Current Project -->
+      <div class = "background__shift">
+        <section id="current_project" class="section projects">
+          <h2 class="section__title"><span class = "primary__shift">Current Project</span></h2>
+
+          <div class="projects__grid">
+            <div class="project">
+              <h3><span class = "primary__shift">Gradescrape</span></h3>
+              <p class="project__description">
+                • Created this application for my needs </br>
+                • Scrapes assignment name and due date from Gradescope and puts it on Google Calendar
+              
+              </p>
+              <ul class="project__stack">
+                <li class="project__stack-item">Python</li>
+                <li class="project__stack-item">Google Workspace</li>
+                <li class="project__stack-item">Scrapy</li>
+                <li class="project__stack-item">CSS/ HTML & JavaScript</li>
+              </ul>
+
+              <p>
+                <a href = "Current_Project/current_project.html">
+                More information
+                </a>
+              </p>
+
+              <a
+                href="https://github.com/viktorinkov/precisely_math"
+                aria-label="source code"
+                class="link link--icon"
+              >
+                <i aria-hidden="true" class="fab fa-github"></i>
+              </a>
+
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- Projects -->
+      <div class = "background__shift"> 
         <section id="projects" class="section projects">
           <h2 class="section__title"> <span class = "primary__shift">Projects</span></h2>
 
@@ -149,43 +240,7 @@
         </section>
       </div>
 
-      <!-- Current Project -->
-      <!-- <div class = "background__shift">
-        <section id="current_project" class="section projects">
-          <h2 class="section__title"><span class = "primary__shift">Current Project</span></h2>
-
-          <div class="projects__grid">
-            <div class="project">
-              <h3><span class = "primary__shift">Multiplication ML</span></h3>
-              <p class="project__description">
-                • Assigned to create a deep learning algorithim for an app. </br>
-                • App is meant to provide questions for the user depending on how well the user is doing.
-              
-              </p>
-              <ul class="project__stack">
-                <li class="project__stack-item">Python</li>
-                <li class="project__stack-item">TenserFlow</li>
-                <li class="project__stack-item">Firebase</li>
-              </ul>
-
-              <p>
-                <a href = "Current_Project/precise_math.html">
-                More information
-                </a>
-              </p>
-
-              <a
-                href="https://github.com/viktorinkov/precisely_math"
-                aria-label="source code"
-                class="link link--icon"
-              >
-                <i aria-hidden="true" class="fab fa-github"></i>
-              </a>
-
-            </div>
-          </div>
-        </section>
-      </div> -->
+      
 
       <!-- Skills -->
       <div class="background__shift">
